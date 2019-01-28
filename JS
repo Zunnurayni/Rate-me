@@ -1,0 +1,39 @@
+var c;
+function st(m)
+{
+    if(m==1)
+    {
+        document.getElementById("r").innerHTML="😢";
+    }
+    else if(m==2)
+    {
+        document.getElementById("r").innerHTML="☹";
+    }
+    else if(m==3)
+    {
+        document.getElementById("r").innerHTML="😐";
+    }
+    else if(m==4)
+    {
+        document.getElementById("r").innerHTML="🙂";
+    }
+    else if(m==5)
+    {
+        document.getElementById("r").innerHTML="😊";
+    }
+    for(var i=1;i<=m;i++)
+    {
+        var id="s"+i;
+        document.getElementById(id).style.color="yellow";
+        document.getElementById(id).style.textShadow="0 0 30px yellow";
+    }
+    for(var j=m+1;j<=5;j++)
+    {
+        var id="s"+j;
+        document.getElementById(id).style.color="#555555";
+        document.getElementById(id).style.textShadow="0 2px 2px rgba(255,255,255,0.13)";
+    }
+    
+    
+    
+}
